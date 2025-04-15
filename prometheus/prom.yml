@@ -10,7 +10,10 @@ scrape_configs:
     scheme: https
     static_configs:
       - targets: ['nethr.storyeditor.eu:8405']
-
+      
+  - job_name: 'server-metrics-domena'
+    static_configs:
+      - targets: ['91.99.79.72:9100/metrics']
   # - job_name: 'example_api'
   #   scheme: http
   #   static_configs:
