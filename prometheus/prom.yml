@@ -13,7 +13,7 @@ scrape_configs:
       
   - job_name: 'server-metrics-domena'
     static_configs:
-      - targets: ['91.99.79.72:9100/metrics']
+      - targets: ['91.99.79.72:9100']
   # - job_name: 'example_api'
   #   scheme: http
   #   static_configs:
