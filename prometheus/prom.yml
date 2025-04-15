@@ -7,8 +7,9 @@ scrape_configs:
       - targets: ['localhost:9090']
       
   - job_name: 'load-balancer-metrics-domena'
+    scheme: https
     static_configs:
-      - targets: ['https://nethr.storyeditor.eu:8405']
+      - targets: ['nethr.storyeditor.eu:8405']
 
   # - job_name: 'example_api'
   #   scheme: http
